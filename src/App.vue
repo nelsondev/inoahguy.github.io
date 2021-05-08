@@ -1,32 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <v-app>
+        <v-main>
+            <Wiggly />
+            <router-view />
+        </v-main>
+    </v-app>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+    data: () => ({
+    }),
+    created() {
+    },
+    components: {
+        Menu: () => import("@/components/Menu.vue"),
+        Wiggly: () => import("@/components/Wiggly.vue")
+    },
+});
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+html,
+body {
+    overflow: auto !important;
+    scroll-behavior: smooth;
 }
 
-#nav {
-  padding: 30px;
+.font {
+    font-family: "Architects Daughter", cursive !important;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.btn-menu {
+    transition: all 0.2s linear !important;
+    border-bottom: 0px solid white;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.btn-menu:hover {
+    transition: all 0.2s linear !important;
+    border-bottom: 5px solid white;
 }
 </style>
