@@ -6,18 +6,22 @@ Vue.use(VueRouter)
 const routes: Array<RouteConfig> = [
     {
         path: '*',
+        name: '404',
         component: () => import('@/views/404.vue')
     },
     {
         path: '/',
+        name: 'Home',
         component: () => import('@/views/Home.vue')
     },
     {
         path: '/work',
+        name: 'Work',
         component: () => import('@/views/Work.vue')
     },
     {
         path: '/about',
+        name: 'About',
         component: () => import('@/views/About.vue')
     }
 ]

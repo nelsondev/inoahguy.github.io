@@ -13,6 +13,14 @@ import Vue from "vue";
 export default Vue.extend({
     data: () => ({
     }),
+    watch: {
+        $route: {
+            immediate: true,
+            handler(to, _from) {
+                document.title = 'Noah Dashney | ' + to.name;
+            }
+        },
+    },
     created() {
     },
     components: {
