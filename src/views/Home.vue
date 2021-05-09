@@ -2,6 +2,7 @@
     <div>
         <v-img
             :src="require('@/assets/self.gif')"
+            :lazy-src="require('@/assets/self.compressed.gif')"
             height="100vh"
             style="overflow-y: hidden"
             dark
