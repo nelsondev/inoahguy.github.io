@@ -8,7 +8,7 @@ export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         titleTemplate: `Noah Dashney`,
-        title: '',
+        title: 'Noah Dashney',
         htmlAttrs: {
             lang: 'en'
         },
