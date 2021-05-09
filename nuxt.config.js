@@ -15,7 +15,15 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Animator and Illustrator' }
+            { hid: 'description', name: 'description', content: 'Animator and Illustrator' },
+            { property: 'og:title', content: 'Noah Dashney' }, 
+            { property: 'og:description', content: 'Artist and Illustrator' },
+            { property: 'og:image', content: 'https://inoahguy.ca/preview.png' },
+            { property: 'og:url', content: 'https://inoahguy.ca/' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { property: 'og:site_name', content: 'Noah Dashney' },
+            { property: 'fb:app_id', content: 'inoahlad_github_io' },
+            { property: 'twitter:site', content: '@INoahfella'},
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
