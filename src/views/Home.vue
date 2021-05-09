@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="black">
         <v-img
             :src="require('@/assets/self.gif')"
             :lazy-src="require('@/assets/self.compressed.gif')"
@@ -35,7 +35,7 @@
             </v-toolbar>
             <v-layout fill-height justify-center align-center column>
                 <v-spacer></v-spacer>
-                <div>
+                <div class="px-3">
                     <v-img
                         :src="require('@/assets/logo.light.svg')"
                         contain
