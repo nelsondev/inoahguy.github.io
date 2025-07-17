@@ -19,8 +19,8 @@
             >
                 Hello, <br><br>
 
-                My names Noah Dashney, a freelance artist, illustrator 
-                and animator based in the Calgary metropolitan area.<br><br>
+                My name is Noah Dashney, a freelance artist, animator
+               	and audio engineer based in the Calgary metropolitan area.<br><br>
 
                 I create unique and memorable custom art and animation
                 content. My work consists of commissioned projects 
@@ -33,7 +33,7 @@
                 left
                 >
                     <template v-slot:activator>
-                        <a @click="copy">noah.dashney@edu.sait.ca</a>
+                        <a @click="copy">toanoah1999@gmail.com</a>
                     </template>
                     <span>Copied!</span>
                 </v-tooltip>
